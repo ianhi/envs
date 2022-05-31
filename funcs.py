@@ -8,7 +8,7 @@ def extend_env(base, env):
     pip = env.get("pip", [])
     conda.extend(base_conda)
     pip.extend(base_pip)
-    return {"pip": pip, "conda": conda}
+    return {"pip": list(sorted(set(pip))), "conda": list(sorted(set(conda)))}
 
 
 # thanks to https://github.com/yaml/pyyaml/issues/234#issuecomment-765894586

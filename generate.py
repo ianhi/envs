@@ -20,8 +20,8 @@ for name, env_info in data.items():
     if name == "base":
         envs["base"] = {"conda": info.get("conda", []), "pip": info.get("pip", [])}
     if "based-on" in info:
-
-        envs[name] = extend_env(envs[info["based-on"][0]], info)
+        for base in info['based-on']:
+            envs[name] = extend_env(envs[base], info)
 
 
 for name, env in envs.items():
