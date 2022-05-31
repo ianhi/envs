@@ -9,8 +9,6 @@ envs = {}
 base_dir = Path(__file__).parent
 env_dir = base_dir / "envs"
 env_dir.mkdir(parents=True, exist_ok=True)
-no_vim_dir = env_dir / "no_vim"
-no_vim_dir.mkdir(parents=True, exist_ok=True)
 with open(base_dir / "definitions.yaml") as f:
 
     data = yaml.load(f, Loader=yaml.FullLoader)
@@ -25,4 +23,4 @@ for name, env_info in data.items():
 
 
 for name, env in envs.items():
-    dump_env(env_dir, name, env, no_vim_dir)
+    dump_env(env_dir, name, env)

@@ -30,15 +30,15 @@ def remove_vim(deps: list[str | dict]) -> list[str | dict]:
     return out
 
 
-def dump_env(env_dir, name, env, no_vim_dir=None):
+def dump_env(env_dir, name, env, no_vim=True):
     """take my garbo dict of env and put in the conda forge format
 
     Parameters
     ----------
     name : str
     env : dict
-    no_vim : path
-        If not None also generate a no_vim version without jupyterlab vim plugins
+    no_vim : boolean
+        If True also generate a no_vim version without jupyterlab vim plugins
     """
     dependencies = env.get("conda", [])
     pip = env.get("pip", [])
@@ -46,8 +46,8 @@ def dump_env(env_dir, name, env, no_vim_dir=None):
     env = {"name": name, "channels": ["conda-forge"], "dependencies": dependencies}
     with open(env_dir / (name + ".yaml"), "w") as f:
         yaml.dump(env, f, Dumper=Dumper)
-    if no_vim_dir is not None:
+    if no_vim:
         vim_free = remove_vim(dependencies)
         env["dependencies"] = vim_free
-        with open(no_vim_dir / (name + "-no-vim.yaml"), "w") as f:
+        with open(env_dir / (name + "-no-vim.yaml"), "w") as f:
             yaml.dump(env, f, Dumper=Dumper)

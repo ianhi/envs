@@ -30,8 +30,6 @@ xarray:
     - dask
     - netCDF4
     - bottleneck
-  - pip:
-    - tifffile
 
 micro-base:
   - based-on:
