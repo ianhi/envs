@@ -3,8 +3,6 @@ channels:
 dependencies:
   - bottleneck
   - dask
-  - ipympl
-  - jupyterlab
   - matplotlib
   - mpl-interactions
   - netCDF4
@@ -16,7 +14,5 @@ dependencies:
   - pip:
       - black
       - isort
-      - jupyterlab_code_formatter
-      - theme-darcula
       - tifffile
 name: xarray
