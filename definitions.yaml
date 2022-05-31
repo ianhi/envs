@@ -21,6 +21,7 @@ micro-base:
       - base
   - pip:
     - napari[all]
+    - aicsimageio
 
 micro-control:
   - based-on:

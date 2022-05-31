@@ -16,6 +16,7 @@ dependencies:
       - git+https://github.com/ianhi/pymmcore-MDA-engines
       - pymmcore-MDA-writers
       - napari[all]
+      - aicsimageio
       - black
       - isort
       - jupyterlab-vimrc

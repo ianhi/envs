@@ -11,6 +11,7 @@ dependencies:
   - mpl-interactions
   - pip:
       - napari[all]
+      - aicsimageio
       - black
       - isort
       - jupyterlab_code_formatter

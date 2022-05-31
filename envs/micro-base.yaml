@@ -12,6 +12,7 @@ dependencies:
   - mpl-interactions
   - pip:
       - napari[all]
+      - aicsimageio
       - black
       - isort
       - jupyterlab-vimrc
