@@ -14,5 +14,4 @@ dependencies:
   - pip:
       - black
       - isort
-      - tifffile
 name: xarray
