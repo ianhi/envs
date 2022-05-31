@@ -1,0 +1,22 @@
+channels:
+  - conda-forge
+dependencies:
+  - scikit-image
+  - scikit-learn
+  - python
+  - jupyterlab
+  - scipy
+  - numpy
+  - matplotlib
+  - ipympl
+  - pip
+  - jupyterlab_vim
+  - mpl-interactions
+  - pip:
+      - napari[all]
+      - black
+      - isort
+      - jupyterlab-vimrc
+      - jupyterlab_code_formatter
+      - theme-darcula
+name: micro-analysis

@@ -1,0 +1,24 @@
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - jupyterlab
+  - scipy
+  - numpy
+  - matplotlib
+  - ipympl
+  - pip
+  - jupyterlab_vim
+  - mpl-interactions
+  - pip:
+      - pymmcore-plus
+      - napari-micromanager
+      - git+https://github.com/ianhi/pymmcore-MDA-engines
+      - pymmcore-MDA-writers
+      - napari[all]
+      - black
+      - isort
+      - jupyterlab-vimrc
+      - jupyterlab_code_formatter
+      - theme-darcula
+name: micro-control

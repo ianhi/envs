@@ -1,0 +1,18 @@
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - jupyterlab
+  - scipy
+  - numpy
+  - matplotlib
+  - ipympl
+  - pip
+  - mpl-interactions
+  - pip:
+      - napari[all]
+      - black
+      - isort
+      - jupyterlab_code_formatter
+      - theme-darcula
+name: micro-base
