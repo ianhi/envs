@@ -5,7 +5,6 @@
 layout: home
 ---
 
-# Ian's conda envs
 Online collection of my conda environments. Kept here for consistency across computers.
 
 For non-vim versions use the `envs/no_vim` folder and add `no-vim` to the file name.
