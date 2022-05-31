@@ -15,13 +15,26 @@ base:
     - jupyterlab-vimrc
     - jupyterlab_code_formatter
     - theme-darcula
+xarray:
+  - based-on:
+    - base
+  - conda:
+    - xarray
+    - dask
+    - netCDF4
+    - bottleneck
+  - pip:
+    - tifffile
 
 micro-base:
   - based-on:
       - base
+      - xarray
   - pip:
     - napari[all]
     - aicsimageio
+    - tifffile
+    - zarr
 
 micro-control:
   - based-on:

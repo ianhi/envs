@@ -1,19 +1,25 @@
 channels:
   - conda-forge
 dependencies:
-  - python
-  - jupyterlab
-  - scipy
-  - numpy
-  - matplotlib
+  - bottleneck
+  - dask
   - ipympl
-  - pip
+  - jupyterlab
+  - matplotlib
   - mpl-interactions
+  - netCDF4
+  - numpy
+  - pip
+  - python
+  - scipy
+  - xarray
   - pip:
-      - napari[all]
       - aicsimageio
       - black
       - isort
       - jupyterlab_code_formatter
+      - napari[all]
       - theme-darcula
+      - tifffile
+      - zarr
 name: micro-base

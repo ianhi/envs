@@ -1,23 +1,29 @@
 channels:
   - conda-forge
 dependencies:
+  - bottleneck
+  - dask
+  - ipympl
+  - jupyterlab
+  - jupyterlab_vim
+  - matplotlib
+  - mpl-interactions
+  - netCDF4
+  - numpy
+  - pip
+  - python
   - scikit-image
   - scikit-learn
-  - python
-  - jupyterlab
   - scipy
-  - numpy
-  - matplotlib
-  - ipympl
-  - pip
-  - jupyterlab_vim
-  - mpl-interactions
+  - xarray
   - pip:
-      - napari[all]
       - aicsimageio
       - black
       - isort
       - jupyterlab-vimrc
       - jupyterlab_code_formatter
+      - napari[all]
       - theme-darcula
+      - tifffile
+      - zarr
 name: micro-analysis

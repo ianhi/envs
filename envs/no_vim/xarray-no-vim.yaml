@@ -5,7 +5,6 @@ dependencies:
   - dask
   - ipympl
   - jupyterlab
-  - jupyterlab_vim
   - matplotlib
   - mpl-interactions
   - netCDF4
@@ -15,17 +14,9 @@ dependencies:
   - scipy
   - xarray
   - pip:
-      - aicsimageio
       - black
-      - git+https://github.com/ianhi/pymmcore-MDA-engines
       - isort
-      - jupyterlab-vimrc
       - jupyterlab_code_formatter
-      - napari-micromanager
-      - napari[all]
-      - pymmcore-MDA-writers
-      - pymmcore-plus
       - theme-darcula
       - tifffile
-      - zarr
-name: micro-control
+name: xarray

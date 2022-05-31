@@ -1,23 +1,29 @@
 channels:
   - conda-forge
 dependencies:
-  - python
-  - jupyterlab
-  - scipy
-  - numpy
-  - matplotlib
+  - bottleneck
+  - dask
   - ipympl
-  - pip
+  - jupyterlab
+  - matplotlib
   - mpl-interactions
+  - netCDF4
+  - numpy
+  - pip
+  - python
+  - scipy
+  - xarray
   - pip:
-      - pymmcore-plus
-      - napari-micromanager
-      - git+https://github.com/ianhi/pymmcore-MDA-engines
-      - pymmcore-MDA-writers
-      - napari[all]
       - aicsimageio
       - black
+      - git+https://github.com/ianhi/pymmcore-MDA-engines
       - isort
       - jupyterlab_code_formatter
+      - napari-micromanager
+      - napari[all]
+      - pymmcore-MDA-writers
+      - pymmcore-plus
       - theme-darcula
+      - tifffile
+      - zarr
 name: micro-control
