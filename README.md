@@ -10,19 +10,19 @@ For non-vim versions use the `envs/no_vim` folder and add `no-vim` to the file n
 base env + napari + xarray + image loading
 
 ```bash
-mamba env create --file --force https://raw.githubusercontent.com/ianhi/envs/main/envs/micro-base.yaml
+mamba env create --force --file https://raw.githubusercontent.com/ianhi/envs/main/envs/micro-base.yaml
 ```
 
 **micro-analysis**
 `micro-base` + scikit image and learn
 
 ```bash
-mamba env create --file --force https://raw.githubusercontent.com/ianhi/envs/main/envs/micro-analysis.yaml
+mamba env create --force --file https://raw.githubusercontent.com/ianhi/envs/main/envs/micro-analysis.yaml
 ```
 
 **micro-analysis**
 `micro-base` plus Controlling microscopes with pymmcore-plus and napari-micromanager
 
 ```bash
-mamba env create --file --force https://raw.githubusercontent.com/ianhi/envs/main/envs/micro-control.yaml
+mamba env create --force --file https://raw.githubusercontent.com/ianhi/envs/main/envs/micro-control.yaml
 ```
