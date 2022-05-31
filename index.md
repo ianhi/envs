@@ -9,6 +9,7 @@ For non-vim versions add `no-vim` to the file name the just before the yaml. e.g
 ## General Usage
 
 **jupyter**
+
 Good setup for generic analysis. Contains numpy matplotlib etc and jupyterlab with interactive matplotlib, a nice dark theme
 and vim extensions.
 
@@ -21,6 +22,7 @@ mamba env create --force --file https://ianhi.github.io/envs/envs/jupyter.yaml
 Everything here is based on `jupyter` and also contains `xarray`
 
 **micro-base**
+
 base env + napari + xarray + image loading
 
 ```bash
@@ -28,13 +30,15 @@ mamba env create --force --file https://ianhi.github.io/envs/envs/micro-base.yam
 ```
 
 **micro-analysis**
+
 `micro-base` + scikit image and learn
 
 ```bash
 mamba env create --force --file https://ianhi.github.io/envs/envs/micro-analysis.yaml
 ```
 
-**micro-analysis**
+**micro-control**
+
 `micro-base` plus Controlling microscopes with pymmcore-plus and napari-micromanager
 
 ```bash
