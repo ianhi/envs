@@ -3,6 +3,8 @@ channels:
 dependencies:
   - bottleneck
   - dask
+  - ipympl
+  - jupyterlab
   - matplotlib
   - mpl-interactions
   - netCDF4
