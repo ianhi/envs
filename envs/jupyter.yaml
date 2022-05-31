@@ -1,0 +1,19 @@
+channels:
+  - conda-forge
+dependencies:
+  - ipympl
+  - jupyterlab
+  - jupyterlab_vim
+  - matplotlib
+  - mpl-interactions
+  - numpy
+  - pip
+  - python
+  - scipy
+  - pip:
+      - black
+      - isort
+      - jupyterlab-vimrc
+      - jupyterlab_code_formatter
+      - theme-darcula
+name: jupyter

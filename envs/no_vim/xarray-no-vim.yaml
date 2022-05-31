@@ -1,0 +1,18 @@
+channels:
+  - conda-forge
+dependencies:
+  - bottleneck
+  - dask
+  - matplotlib
+  - mpl-interactions
+  - netCDF4
+  - numpy
+  - pip
+  - python
+  - scipy
+  - xarray
+  - pip:
+      - black
+      - isort
+      - tifffile
+name: xarray

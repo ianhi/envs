@@ -1,0 +1,13 @@
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - scipy
+  - numpy
+  - matplotlib
+  - pip
+  - mpl-interactions
+  - pip:
+      - black
+      - isort
+name: base
