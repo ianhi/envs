@@ -23,16 +23,7 @@ jobs:
         run: |
           pip install pyyaml
           python generate.py
-
-      - name: move
-        run: |
-          mkdir public
           mv envs pages/envs
-
-      # - uses: helaili/jekyll-action@v2
-      #   with:
-      #     token: ${{ secrets.GITHUB_TOKEN }}
-      #     jekyll_src: 'pages'
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
