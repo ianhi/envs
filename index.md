@@ -4,7 +4,17 @@ layout: default
 
 Online collection of my conda environments. Kept here for consistency across computers.
 
-For non-vim versions add `no-vim` to the file name the just before the yaml. e.g. `jupyter.yaml -> jupyter-no-vim.yaml`
+**Without vim**
+
+By default the enviroments will have `jupyterlab-vim` and `jupyterlab-vimrc` installed. To not install these add `no-vim`
+to the file name the just before the yaml. e.g. `jupyter.yaml -> jupyter-no-vim.yaml`
+
+
+**Choose your own environment name**
+
+The environments come with default names, however you can use the `--name` flag to override that and use your own name.
+e.g. `mamba env create --force [...] --name <YOUR ENV NAME>`
+
 
 ## General Usage
 
