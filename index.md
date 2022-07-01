@@ -52,6 +52,6 @@ mamba env create --force --file https://ianhi.github.io/envs/envs/micro-analysis
 `micro-base` plus Controlling microscopes with pymmcore-plus and napari-micromanager
 
 ```bash
-mamba env create --force --file https://ianhi.github.io.envs/envs/micro-control.yaml
+mamba env create --force --file https://ianhi.github.io/envs/envs/micro-control.yaml
 ```
 
