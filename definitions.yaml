@@ -9,6 +9,7 @@ base:
   - pip:
     - black
     - isort
+    - pre-commit
 
 jupyter:
   - based-on:
