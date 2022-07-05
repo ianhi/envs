@@ -23,6 +23,7 @@ dependencies:
       - jupyterlab_code_formatter
       - napari-micromanager
       - napari[all]
+      - pre-commit
       - pymmcore-MDA-writers
       - pymmcore-plus
       - theme-darcula

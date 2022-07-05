@@ -21,6 +21,7 @@ dependencies:
       - isort
       - jupyterlab_code_formatter
       - napari[all]
+      - pre-commit
       - theme-darcula
       - tifffile
       - zarr

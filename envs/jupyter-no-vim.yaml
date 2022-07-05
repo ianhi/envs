@@ -13,5 +13,6 @@ dependencies:
       - black
       - isort
       - jupyterlab_code_formatter
+      - pre-commit
       - theme-darcula
 name: jupyter

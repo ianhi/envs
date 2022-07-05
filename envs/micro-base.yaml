@@ -21,6 +21,7 @@ dependencies:
       - jupyterlab-vimrc
       - jupyterlab_code_formatter
       - napari[all]
+      - pre-commit
       - theme-darcula
       - tifffile
       - zarr

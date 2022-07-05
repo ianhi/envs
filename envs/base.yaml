@@ -10,4 +10,5 @@ dependencies:
   - pip:
       - black
       - isort
+      - pre-commit
 name: base

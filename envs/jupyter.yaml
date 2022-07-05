@@ -15,5 +15,6 @@ dependencies:
       - isort
       - jupyterlab-vimrc
       - jupyterlab_code_formatter
+      - pre-commit
       - theme-darcula
 name: jupyter
